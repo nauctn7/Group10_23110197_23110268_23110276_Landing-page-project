@@ -105,7 +105,7 @@ body {
 
 /* Pricing Section */
 .pricing {
-    padding: 80px 20px;
+    padding: 80px;
     background: white;
 }
 
@@ -121,7 +121,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 16px auto;
 }
 
 .price-card {
@@ -289,6 +289,17 @@ form input:focus, form textarea:focus {
 
 .submit-button:hover {
     background: #5568d3;
+}
+/* Buttons */
+.btn{
+    display:inline-block; 
+    margin-top: 12px; 
+    padding:10px 16px;
+    border-radius:8px;
+    text-decoration:none;
+    color:var(--dark);
+    border:1px solid #ddd;
+    background:#f7f7f7
 }
 
 /* Footer */
