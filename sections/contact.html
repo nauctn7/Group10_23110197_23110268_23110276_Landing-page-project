@@ -1,0 +1,58 @@
+<section class="contact">
+    <h2>Liên Hệ Với Chúng Tôi</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Thông Tin Cửa Hàng</h3>
+            <div class="info-item">
+                <strong>Địa Chỉ:</strong>
+                <p>17 Đường 3 Tháng 2, Phường 10, Quận 10, Thành phố Hồ Chí Minh, Việt Nam</p>
+            </div>
+            <div class="info-item">
+                <p>Hotline: 07.9882.1882</p>
+            </div>
+            <div class="info-item">
+                <strong>Email:</strong>
+                <p>rogerfankofficial@gmail.com</p>
+            </div>
+            <div class="info-item">
+                <strong>Giờ Làm Việc:</strong>
+                <p>8:00 - 22:00</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h3>Gửi Tin Nhắn Cho Chúng Tôi</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Tên của bạn *</label>
+                    <input type="text" id="name" name="name" required placeholder="Nhập tên của bạn">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="Nhập email của bạn">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số Điện Thoại</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Tiêu Đề *</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Tiêu đề tin nhắn">
+                </div>
+                <div class="form-group">
+                    <label for="message">Nội Dung Tin Nhắn *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Nhập nội dung tin nhắn của bạn..."></textarea>
+                </div>
+                <button type="submit" class="submit-button">Gửi Tin Nhắn</button>
+                <p class="form-note">* Là những trường bắt buộc</p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Cảm ơn bạn! Tin nhắn của bạn đã được gửi. Chúng tôi sẽ liên hệ lại sớm.');
+            this.reset();
+        });
+    </script>
+</section>
